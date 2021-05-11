@@ -1,0 +1,247 @@
+// css scrollbar
+/* width */
+//::-webkit-scrollbar {
+//    width: 5px;
+//}
+//
+///* Track */
+//::-webkit-scrollbar-track {
+//    background: transparent;
+//}
+//
+///* Handle */
+//::-webkit-scrollbar-thumb {
+//    background: #5b79a5;
+//    border-radius: 10px;
+//}
+//
+///* Handle on hover */
+//::-webkit-scrollbar-thumb:hover {
+//    background: #037fbd;
+//}
+
+// spinner
+.lds-dual-ring {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: 4px;
+  border-radius: 50%;
+  border: 2px solid #ef8339;
+  border-color: #ef8339 transparent #ef8339 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.backdropModal {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+/* css modal full screen */
+.backdropModalFullScreen {
+  background-color: transparent !important;
+}
+
+// remove border radius
+.modalFullScreen .MuiPaper-rounded {
+  border-radius: 0;
+}
+
+// color modal title
+.modalFullScreen .MuiDialogTitle-root {
+  background-color: #262424;
+  color: #ffffff;
+}
+
+.modalFullScreen .MuiDialogContent-root:first-child {
+  padding-top: 0;
+}
+
+.modalFullScreen .MuiDialogContent-root {
+  padding: 0;
+}
+
+.modalFullScreen .MuiDialogContent-root {
+  background-color: #F6F7FF;
+}
+
+.modalFullScreen .MuiDialog-paper {
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  right: 0;
+  left: 96px;
+  margin: 0;
+  max-width: unset;
+  width: calc(100% - 96px);
+  max-height: 100vh;
+  height: 100%;
+}
+
+.sideBarOpened .modalFullScreen .MuiDialog-paper {
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  right: 0;
+  left: 260px;
+  margin: 0;
+  max-width: unset;
+  width: calc(100% - 260px);
+  max-height: 100vh;
+  height: 100%;
+}
+
+// small screen full screen modal size
+.smallScreen .modalFullScreen .MuiDialog-paper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  max-width: unset;
+  width: 100%;
+  max-height: 100vh;
+  height: 100%;
+}
+
+//input kéo hàng
+.input-quick-bet {
+  margin: 0 !important;
+}
+
+.input-quick-bet .MuiInputBase-formControl {
+  border-radius: 0;
+  max-width: 54px;
+  min-width: 54px;
+}
+
+.input-quick-bet input {
+  background: white;
+  text-align: center;
+  font-size: 13px;
+  outline: none;
+  padding: 6px !important;
+  background-color: white;
+}
+
+.input-quick-bet.input-pink input:disabled {
+  background-color: rgba(255, 127, 87, .08);
+}
+
+.input-quick-bet.input-grey input:disabled {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+
+// input disabled
+.MuiInputBase-root.Mui-disabled {
+  background-color: #dedede;
+}
+
+// text custom
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.text-red {
+  color: #cc3f44;
+}
+
+// Layout row
+.layout-row {
+  flex-direction: row;
+  display: flex;
+}
+
+.layout-row > .flex-30 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  max-width: 30%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.layout-row > .flex-70 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  max-width: 70%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.layout-row > .flex-20 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  max-width: 20%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.layout-row > .flex-25 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  max-width: 25%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.layout-row > .flex-80 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  max-width: 80%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.layout-row > .flex-50 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  max-width: 50%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.layout-row > .flex-33 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  max-width: 33%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+
